@@ -12,13 +12,13 @@
 下面总结一下相关对比：
 
 * 两者趋势
-  * ![web_automation_trends](../../../assets/img/web_automation_trends.png)
+  * ![web_automation_trends](../../assets/img/web_automation_trends.png)
 
 具体区别：
 
 * `Selenium`
   * Logo
-    * ![selenium_logo](../../../assets/img/selenium_logo.png)
+    * ![selenium_logo](../../assets/img/selenium_logo.png)
   * 有些网站能检测到是WebDriver，就无法继续爬取了
     * 注：通过`webdriver`对浏览器的每一步操作都会留下特殊的痕迹，会被很多网站识别到
       * 规避办法：必须通过重新编译chrome的webdriver才能实现
@@ -52,7 +52,7 @@
     * 截图只支持图片
 * `Puppeteer`
   * Logo
-    * ![puppeteer_logo](../../../assets/img/puppeteer_logo.png)
+    * ![puppeteer_logo](../../assets/img/puppeteer_logo.png)
   * 发布时间：2017年
   * 开发者：`Google`
   * 目标：简化前端测试(front-end test)和开发
