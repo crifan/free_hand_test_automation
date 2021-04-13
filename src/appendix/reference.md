@@ -1,5 +1,7 @@
 # 参考资料
 
+* 【未解决】Mac中用facebook-wda自动操作安卓手机浏览器实现百度搜索
+* 
 * [网络爬虫之使用pyppeteer替代selenium完美绕过webdriver检测 阅读目录 - 知乎](https://zhuanlan.zhihu.com/p/139521993)
 * [爬虫神器pyppeteer，对 js 加密降维打击 - 掘金](https://juejin.im/post/5cd8257551882568897d8b8c)
 * [pyppeteer(python版puppeteer)基本使用 - 白灰 - 博客园](https://www.cnblogs.com/baihuitestsoftware/p/10531462.html)

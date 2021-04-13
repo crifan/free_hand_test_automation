@@ -2,6 +2,8 @@
 
 * [前言](README.md)
 * [概述](overview/README.md)
+  * [举例](overview/example/README.md)
+    * [百度搜索自动化](overview/example/baidu_search_automation.md)
 * [PC端](pc_side/README.md)
   * [Web端](pc_side/web/README.md)
     * [Selenium](pc_side/web/selenium.md)
