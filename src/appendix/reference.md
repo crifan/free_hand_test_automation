@@ -1,6 +1,11 @@
 # 参考资料
 
 * 【未解决】Mac中用facebook-wda自动操作安卓手机浏览器实现百度搜索
+* 【已解决】pyppeteer中提取百度搜索结果中的信息
+* 【已解决】pyppeteer中page.querySelectorAll运行时无法获取到结果
+* 【规避解决】pyppeteer不调试直接运行waitForSelector报错：ElementHandleError Evaluation failed TypeError MutationObserver is not a constructor at pollMutation
+* 【已解决】Mac中初始化搭建Python版puppeteer的pyppeteer的开发环境
+* 【已解决】pyppeteer如何给输入框中输入文字
 * 
 * [网络爬虫之使用pyppeteer替代selenium完美绕过webdriver检测 阅读目录 - 知乎](https://zhuanlan.zhihu.com/p/139521993)
 * [爬虫神器pyppeteer，对 js 加密降维打击 - 掘金](https://juejin.im/post/5cd8257551882568897d8b8c)
