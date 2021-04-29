@@ -1,8 +1,8 @@
 # Function: uiautomator2 demo baidu search
 # Author: Crifan Li
-# Update: 2020410
+# Update: 2020417
 
-import time
+# import time
 import uiautomator2 as u2
 
 d = u2.connect() # connect to device
@@ -35,6 +35,7 @@ print("Browser homepage loaded")
 ################################################################################
 # Open baidu homepage
 ################################################################################
+SearchInputId = "com.android.browser:id/b4w"
 
 # # open new window
 # windowUiObj = d(resourceId="com.android.browser:id/dm")
@@ -52,8 +53,8 @@ print("Browser homepage loaded")
 # find input box inside address bar
 
 # # Method 1: use driver pass in parameter
-# inputUiObj = d(resourceId="com.android.browser:id/b4h", className="android.widget.TextView")
-# # inputUiObj = d(resourceId="com.android.browser:id/b4h")
+# inputUiObj = d(resourceId=SearchInputId, className="android.widget.TextView")
+# # inputUiObj = d(resourceId=SearchInputId)
 # print("type(inputUiObj)=%s" % type(inputUiObj)) # type(inputUiObj)=<class 'uiautomator2.session.UiObject'>
 # print("inputUiObj=%s" % inputUiObj) # inputUiObj=<uiautomator2.session.UiObject object at 0x10a0bea00>
 # inputUiObjectInfo = inputUiObj.info
@@ -62,8 +63,8 @@ print("Browser homepage loaded")
 # isFoundInput = inputUiObj.exists # True
 
 # # Method 2: use xpath
-# inputXpathSelector = d.xpath("//android.widget.TextView[@resource-id='com.android.browser:id/b4h']")
-# # inputXpathSelector = d.xpath("//*[@resource-id='com.android.browser:id/b4h']")
+# inputXpathSelector = d.xpath("//android.widget.TextView[@resource-id=SearchInputId]")
+# # inputXpathSelector = d.xpath("//*[@resource-id=SearchInputId]")
 # print("type(inputXpathSelector)=%s" % type(inputXpathSelector)) # type(inputXpathSelector)=<class 'uiautomator2.xpath.XPathSelector'>
 # inputXpathElem = inputXpathSelector.get()
 # print("type(inputXpathElem)=%s" % type(inputXpathElem)) # type(inputXpathElem)=<class 'uiautomator2.xpath.XMLElement'>
@@ -76,17 +77,18 @@ print("Browser homepage loaded")
 # trigger into input page
 
 # Method 1
-inputUiObj = d(resourceId="com.android.browser:id/b4h", className="android.widget.TextView")
+inputUiObj = d(resourceId=SearchInputId, className="android.widget.TextView")
 inputUiObj.click()
 print("Clicked search box")
 
 # # Method 2
-# inputXpathSelector = d.xpath("//android.widget.TextView[@resource-id='com.android.browser:id/b4h']")
+# inputXpathSelector = d.xpath("//android.widget.TextView[@resource-id=%s]" % SearchInputId)
 # inputXpathSelector.click()
 
 # input baidu homr url
 BaiduHomeUrl = "https://www.baidu.com/"
-searchUiObj = d(resourceId="com.android.browser:id/bq3", className="android.widget.EditText")
+AddressInputId = "com.android.browser:id/bqi"
+searchUiObj = d(resourceId=AddressInputId, className="android.widget.EditText")
 searchUiObj.set_text(BaiduHomeUrl)
 print("Inputed baidu homepage url: %s" % BaiduHomeUrl)
 
@@ -96,7 +98,8 @@ d.press(EnterKey)
 print("Emulated press key %s" % EnterKey)
 
 # wait util baidu home loaded
-d(text="百度一下", resourceId="com.android.browser:id/bq3").exists(timeout=10)
+# d(text="百度一下", resourceId="com.android.browser:id/bq3").exists(timeout=10)
+d(text="百度一下,你就知道", className="android.view.View").exists(timeout=10)
 print("Baidu home loaded")
 
 ################################################################################
@@ -180,4 +183,4 @@ for curIdx, eachTitleButtonElement in enumerate(titleButtonElementList):
     # curSourceWebsite = curSourceWebsiteElem.text
     # print("curSourceWebsite=%s" % curSourceWebsite)
 
-print()
+print("Demo baidu search complete")
