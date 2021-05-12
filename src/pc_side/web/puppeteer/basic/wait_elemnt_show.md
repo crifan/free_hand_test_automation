@@ -1,6 +1,6 @@
 # 等待元素出现
 
-**现象**：代码：
+**现象**：对于代码：
 
 ```python
     resultASelector = "h3[class^='t'] a"
@@ -9,11 +9,11 @@
 
 调试时可以正常运行，可以找到元素：
 
-![pyppeteer_debug_found_element](../../../assets/img/pyppeteer_debug_found_element.png)
+![pyppeteer_debug_found_element](../../../../assets/img/pyppeteer_debug_found_element.png)
 
 直接运行时，却找不到元素了：
 
-![pyppeteer_cannot_found_element](../../../assets/img/pyppeteer_cannot_found_element.png)
+![pyppeteer_cannot_found_element](../../../../assets/img/pyppeteer_cannot_found_element.png)
 
 **原因**：页面重新加载了，但是内容还没显示出来。所以找不到元素。
 
@@ -29,18 +29,29 @@
 <span class="nums_text">百度为您找到相关结果约2,370,000个</span>
 ```
 
-对应等待元素出现的代码是：
+对应等待元素出现
 
-```python
-    SearchFoundWordsSelector = 'span.nums_text'
-    SearchFoundWordsXpath = "//span[@class='nums_text']"
+* （好的）方法1：`querySelector`+`sleep`
+  * 代码
+    ```python
+        SearchFoundWordsSelector = 'span.nums_text'
+        SearchFoundWordsXpath = "//span[@class='nums_text']"
 
-    # Method 2: wait element showing
-    SingleWaitSeconds = 1
-    while not await page.querySelector(SearchFoundWordsSelector):
-      print("Still not found %s, wait %s seconds" % (SearchFoundWordsSelector, SingleWaitSeconds))
-      await asyncio.sleep(SingleWaitSeconds)
-```
+        # Method 2: wait element showing
+        SingleWaitSeconds = 1
+        while not await page.querySelector(SearchFoundWordsSelector):
+        print("Still not found %s, wait %s seconds" % (SearchFoundWordsSelector, SingleWaitSeconds))
+        await asyncio.sleep(SingleWaitSeconds)
+    ```
+* （不够好的）方法2：直接wait等待
+  * 代码
+    ```python
+        # # Method 1: just wait
+        await page.waitFor(2000) # millisecond
+    ```
+  * 评价：不够好，不能精确判断元素是否出现
+
+---
 
 > #### danger:: `waitFor`系列的所有函数都无效
 > 经过实际测试，`waitFor`系列的各个函数，此处都无效

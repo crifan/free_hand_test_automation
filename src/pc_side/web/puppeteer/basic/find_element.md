@@ -2,7 +2,7 @@
 
 查找元素相关函数：
 
-* pyppeteer
+* `pyppeteer`
   * `Page.querySelector()`
     * 别名：`Page.J()`
   * `Page.querySelectorAll()`
@@ -14,7 +14,7 @@
 
 对于页面：
 
-![pyppeteer_debug_baidu_input](../../../assets/img/pyppeteer_debug_baidu_input.png)
+![pyppeteer_debug_baidu_input](../../../../assets/img/pyppeteer_debug_baidu_input.png)
 
 对应html：
 
@@ -38,7 +38,7 @@ searchButtonElem=<coroutine object Page.xpath at 0x10f15cdb0>
 
 调试效果：
 
-![pyppeteer_coroutine_page_xpath](../../../assets/img/pyppeteer_coroutine_page_xpath.png)
+![pyppeteer_coroutine_page_xpath](../../../../assets/img/pyppeteer_coroutine_page_xpath.png)
 
 ## 批量查找`querySelectorAll`
 
@@ -65,5 +65,5 @@ searchButtonElem=<coroutine object Page.xpath at 0x10f15cdb0>
 
 即可找到元素：
 
-![puppetter_find_element](../../../assets/img/puppetter_find_element.png)
+![puppetter_find_element](../../../../assets/img/puppetter_find_element.png)
 

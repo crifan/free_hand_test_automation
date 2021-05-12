@@ -62,4 +62,5 @@ baiduLinkUrl=http://www.baidu.com/link?url=l6jXejlgARrWj34ODgKWZ9BeNKwyYZLRhLb5B
 
 效果：
 
-![puppeteer_parse_out_result](../../../assets/img/puppeteer_parse_out_result.png)
+![puppeteer_parse_out_result](../../../../assets/img/puppeteer_parse_out_result.png)
+
