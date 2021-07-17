@@ -1,6 +1,6 @@
 {
-  "latestVersion": "v2.2",
-  "lastUpdate": "20210510",
+  "latestVersion": "v2.6",
+  "lastUpdate": "20210717",
   "gitRepoName": "free_hand_test_automation",
   "bookName": "解放你的双手：自动化测试",
   "bookDescription": "介绍如何通过自动化测试，去解放你的双手，提高测试效率。包括进行概述，以及详细介绍PC端和移动端。包括PC端的Web端的Selenium、puppeteer、Playwright和移动端的常见框架，比如Android的uiautomator2、iOS的facebook-wda等自动化工具。"

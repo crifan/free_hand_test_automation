@@ -1,6 +1,6 @@
 # Function: uiautomator2 demo baidu search
 # Author: Crifan Li
-# Update: 2020417
+# Update: 20210417
 
 # import time
 import uiautomator2 as u2

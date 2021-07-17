@@ -3,9 +3,9 @@
 * Web端自动化操作
   * 目的：模拟人手工去操作浏览器
 * 常见框架有
-  * Selenium
-  * puppeteer
-  * Playwright
+  * [Selenium](http://book.crifan.com/books/selenium_summary/website)
+  * [puppeteer](https://book.crifan.com/books/web_automation_tool_puppeteer/website/)
+  * [Playwright](https://book.crifan.com/books/web_automation_tool_playwright/website/)
 
 ## Selenium vs puppeteer
 
