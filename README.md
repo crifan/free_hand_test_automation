@@ -1,7 +1,7 @@
 # 解放你的双手：自动化测试
 
-* 最新版本：`v2.6`
-* 更新时间：`20210717`
+* 最新版本：`v2.7`
+* 更新时间：`20210730`
 
 ## 简介
 
@@ -21,14 +21,14 @@
 
 ### 在线浏览
 
-* [解放你的双手：自动化测试 book.crifan.com](http://book.crifan.com/books/free_hand_test_automation/website)
+* [解放你的双手：自动化测试 book.crifan.com](https://book.crifan.com/books/free_hand_test_automation/website)
 * [解放你的双手：自动化测试 crifan.github.io](https://crifan.github.io/free_hand_test_automation/website)
 
 ### 离线下载阅读
 
-* [解放你的双手：自动化测试 PDF](http://book.crifan.com/books/free_hand_test_automation/pdf/free_hand_test_automation.pdf)
-* [解放你的双手：自动化测试 ePub](http://book.crifan.com/books/free_hand_test_automation/epub/free_hand_test_automation.epub)
-* [解放你的双手：自动化测试 Mobi](http://book.crifan.com/books/free_hand_test_automation/mobi/free_hand_test_automation.mobi)
+* [解放你的双手：自动化测试 PDF](https://book.crifan.com/books/free_hand_test_automation/pdf/free_hand_test_automation.pdf)
+* [解放你的双手：自动化测试 ePub](https://book.crifan.com/books/free_hand_test_automation/epub/free_hand_test_automation.epub)
+* [解放你的双手：自动化测试 Mobi](https://book.crifan.com/books/free_hand_test_automation/mobi/free_hand_test_automation.mobi)
 
 ## 版权说明
 

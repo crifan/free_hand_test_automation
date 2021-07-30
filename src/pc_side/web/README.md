@@ -7,6 +7,21 @@
   * [puppeteer](https://book.crifan.com/books/web_automation_tool_puppeteer/website/)
   * [Playwright](https://book.crifan.com/books/web_automation_tool_playwright/website/)
 
+## Selenium vs Playwright
+
+* `Selenium`：
+  * 优点：最流行，支持度最好
+    * 网上还有些专门插件实现特定功能，比如：捕获http请求的[selenium-wire](https://github.com/wkeeling/selenium-wire)
+  * 缺点：被有些网站反爬（识别了特征？）
+* `Playwright`：
+  * 优点：简单好用
+  * 缺点：打开页面速度比Selenium要慢
+    * 之前测试过短链解析成长链期间的测试结果：
+      * Selenium：**1.5**分钟
+        * 模拟打开短链，跳转到长链，捕获特定http请求
+      * Playwright：**5**分钟
+        * 模拟google搜索，显示搜索结果
+
 ## Selenium vs puppeteer
 
 下面总结一下相关对比：

@@ -21,10 +21,10 @@
       ]
     },
     "sitemap-general": {
-      "prefix": "https://book.crifan.com/gitbook/free_hand_test_automation/website/"
+      "prefix": "https://book.crifan.com/books/free_hand_test_automation/website/"
     },
     "toolbar-button": {
-      "url": "http://book.crifan.com/books/free_hand_test_automation/pdf/free_hand_test_automation.pdf",
+      "url": "https://book.crifan.com/books/free_hand_test_automation/pdf/free_hand_test_automation.pdf",
       "icon": "fa-file-pdf-o",
       "label": "下载PDF"
     },
